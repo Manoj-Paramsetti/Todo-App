@@ -100,4 +100,16 @@ body {
   border-radius: 3px;
   padding: 4px;
 }
+
+#App #cards {
+  height: calc(60vh - 50px);
+  overflow-y: scroll;
+  padding: 3px;
+  scrollbar-width: none;
+  scrollbar-width--ms-overflow-style: none;
+}
+
+#App #cards::-webkit-scrollbar {
+  display: none;
+}
 /*# sourceMappingURL=index.css.map */

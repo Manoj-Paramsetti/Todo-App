@@ -1,7 +1,7 @@
 * {
   margin: 0;
-  -webkit-box-sizing: 0;
-          box-sizing: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -9,7 +9,10 @@ body {
   background: #27da80;
   color: white;
   font-family: 'poppins';
+  width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #Heading {
@@ -59,10 +62,10 @@ body {
 #App input {
   border: 0px solid grey;
   height: 25px;
-  width: 90%;
+  width: 88%;
   background: #EEE;
   border-radius: 3px;
-  padding: 3px;
+  padding: 10px;
   font-family: 'poppins';
   outline: 0;
 }
@@ -75,6 +78,12 @@ body {
   border: 0;
   border-radius: 3px;
   padding: 4px;
+  color: white;
+}
+
+#App button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 #App .card {
@@ -89,6 +98,10 @@ body {
   border-radius: 5px;
 }
 
+#App .card:hover {
+  background: #EEE;
+}
+
 #App .card button {
   float: right;
   height: 25px;
@@ -101,8 +114,13 @@ body {
   padding: 4px;
 }
 
+#App .card button:hover {
+  background: #FF5555;
+}
+
 #App #cards {
-  height: calc(60vh - 50px);
+  margin-top: 10px;
+  height: calc(60vh - 60px);
   overflow-y: scroll;
   padding: 3px;
   scrollbar-width: none;
@@ -111,5 +129,25 @@ body {
 
 #App #cards::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #prop__1 {
+    overflow: hidden;
+    display: none;
+  }
+  #App {
+    width: 90vw;
+    height: 50vh;
+  }
+  #App #cards {
+    height: calc(50vh - 60px);
+  }
+}
+
+@media screen and (max-height: 600px) {
+  #prop__2, #prop__1 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */

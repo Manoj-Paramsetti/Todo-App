@@ -1,12 +1,15 @@
 *
     margin: 0
-    box-sizing: 0
+    box-sizing: border-box
     padding: 0
 body
     background: #27da80
     color: white
     font-family: 'poppins'
+    width: 100vw
+    height: 100vh
     overflow-x: hidden
+    overflow-y: hidden
 #Heading
     margin-top: 40px 
     text-align: center
@@ -43,10 +46,10 @@ body
     input
         border: 0px solid grey
         height: 25px
-        width: 90%
+        width: 88%
         background: #EEE
         border-radius: 3px
-        padding: 3px
+        padding: 10px
         font-family: 'poppins'
         outline: 0
     button
@@ -57,6 +60,9 @@ body
         border: 0
         border-radius: 3px
         padding: 4px
+        color: white
+        &:hover
+            transform: scale(1.03)
     .card
         width: calc(100%-20px)
         height: 40px
@@ -66,6 +72,8 @@ body
         padding-right: 10px
         box-shadow: 0px 0px 4px grey
         border-radius: 5px
+        &:hover
+            background: #EEE
         button
             float: right
             height: 25px
@@ -76,11 +84,29 @@ body
             border: 0
             border-radius: 3px
             padding: 4px
+            &:hover
+                background: #FF5555
     #cards
-        height: calc(60vh - 50px)
+        margin-top: 10px 
+        height: calc(60vh - 60px)
         overflow-y: scroll
         padding: 3px
         scrollbar-width: none
          -ms-overflow-style: none
         &::-webkit-scrollbar  
             display: none
+@media screen and ( max-width: 600px )
+    #prop__1
+        overflow: hidden
+        display: none
+    #App
+        width: 90vw
+        height: 50vh
+        #cards
+            height: calc(50vh - 60px)
+    //#prop__2
+    //    display: none
+@media screen and ( max-height:  600px)
+    #prop__2, #prop__1
+        display: none
+

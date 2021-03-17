@@ -74,6 +74,7 @@ body {
   height: 25px;
   background: #17B678;
   font-family: 'poppins';
+  font-weight: bolder;
   outline: 0;
   border: 0;
   border-radius: 3px;
@@ -82,8 +83,8 @@ body {
 }
 
 #App button:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 #App .card {
@@ -93,8 +94,8 @@ body {
   line-height: 40px;
   padding-left: 10px;
   padding-right: 10px;
-  -webkit-box-shadow: 0px 0px 4px grey;
-          box-shadow: 0px 0px 4px grey;
+  -webkit-box-shadow: 0px 0px 5px rgba(125, 125, 125, 0.4);
+          box-shadow: 0px 0px 5px rgba(125, 125, 125, 0.4);
   border-radius: 5px;
 }
 

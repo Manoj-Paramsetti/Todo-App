@@ -99,7 +99,7 @@ body {
 }
 
 #App .card:hover {
-  background: #EEE;
+  background: #F8f8f8;
 }
 
 #App .card button {
@@ -120,7 +120,7 @@ body {
 
 #App #cards {
   margin-top: 10px;
-  height: calc(60vh - 60px);
+  height: calc(60vh - 75px);
   overflow-y: scroll;
   padding: 3px;
   scrollbar-width: none;
@@ -141,7 +141,7 @@ body {
     height: 50vh;
   }
   #App #cards {
-    height: calc(50vh - 60px);
+    height: calc(50vh - 75px);
   }
 }
 

@@ -89,9 +89,10 @@ body {
 
 #App .card {
   width: calc(100%-20px);
-  height: 40px;
+  min-height: 40px;
   margin-top: 10px;
   line-height: 40px;
+  overflow-wrap: break-word;
   padding-left: 10px;
   padding-right: 10px;
   -webkit-box-shadow: 0px 0px 5px rgba(125, 125, 125, 0.4);
@@ -101,6 +102,13 @@ body {
 
 #App .card:hover {
   background: #F8f8f8;
+}
+
+#App .card input {
+  border: 0px solid grey;
+  height: auto;
+  width: auto;
+  margin-right: 10px;
 }
 
 #App .card button {

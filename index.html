@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <title>Todo App</title>
 </head>
-<body>
+<body onload="getData()">
     <div id = "Heading">
         <h1>Todo List</h1>
     </div>
@@ -24,7 +24,7 @@
         <input id="input" type="text">
         <button type="submit" onclick="add()">Add</button>
         <section id = "cards">
-            
+        
         </section>
     </section>
     <script src="index.js">
